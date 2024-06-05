@@ -9,7 +9,6 @@ from HtmlTemplates import css, bot_template, user_template
 from langchain.chat_models import ChatOpenAI
 openai = ChatOpenAI(model_name = "gpt-3.5-turbo")
 from langchain.embeddings import OpenAIEmbeddings
-from HtmlTemplates import css, bot_template, user_template
 from PIL import Image
 
 
@@ -97,11 +96,11 @@ def main():
                     vectorstore)
 
                 st.success("Processing complete!")
-                
+    st.header("Chat with your Text")            
     if not user_source:
         st.error("Please provide your Text and click 'Process'.")
     elif st.session_state.conversation:
-        user_question = st.text_input("Ask a question about your texts:")
+        user_question = st.text_input("Ask a question about your text:")
         if user_question:
             handle_userinput(user_question)
               
