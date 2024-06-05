@@ -115,11 +115,11 @@ def main():
                     
     
     
-                    
+    st.header("Chat with your Pdf file")                
     if not pdf_docs:
         st.error("Please provide PDF documents first.")
     elif st.session_state.conversation:
-        user_question = st.text_input("Ask a question about your Pdfs:")
+        user_question = st.text_input("Ask a question about your PDf:")
         if user_question:
             handle_userinput(user_question)
     else:
