@@ -13,6 +13,7 @@ css = '''
 }
 .chat-message.bot {
     background-color: #475063;
+    
 }
 .chat-message .avatar {
     flex: 0 0 auto;
@@ -29,6 +30,12 @@ css = '''
     flex: 1;
     padding: 0 1.5rem;
     color: #fff;
+    
+   overflow-wrap: break-word;
+    border-right: 2px solid;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, blink 0.5s step-end infinite;
+
 }
 </style>
 

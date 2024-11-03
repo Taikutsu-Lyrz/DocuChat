@@ -124,10 +124,8 @@ def main():
             handle_userinput(user_question)
     else:
         st.error("Please process your Pdf.")
-       
-  
-
-
+        
+    
     
 
 if __name__ == '__main__':
