@@ -46,7 +46,7 @@ css = '''
 bot_template = '''
 <div class="chat-message bot">
     <div class="avatar">
-      <img src="https://i.ibb.co/gz8kQFm/Bot-final.png" alt="User" border="0">
+      <img src="https://i.ibb.co.com/p0XZB56/icon.png" alt="User" border="0">
     </div>
     <div class="message">{{MSG}}</div>
 </div>
