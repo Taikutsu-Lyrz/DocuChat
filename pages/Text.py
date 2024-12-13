@@ -79,20 +79,25 @@ def main():
 
         user_source =  st.text_area("Provide text here")
         
-        if st.button("Process"):
-            with st.spinner("Processing"):
+        if not user_source:
+            st.error("Please provide your Text.")
+            
+        else:
+        
+            if st.button("Process"):
+                with st.spinner("Processing"):
                 
                 
-                raw_text = user_source
+                    raw_text = user_source
 
                 # get the text chunks
-                text_chunks = get_text_chunks(raw_text)
+                    text_chunks = get_text_chunks(raw_text)
 
                 # create vector store
-                vectorstore = get_vectorstore(text_chunks)
+                    vectorstore = get_vectorstore(text_chunks)
 
                 # create conversation chain
-                st.session_state.conversation = get_conversation_chain(
+                    st.session_state.conversation = get_conversation_chain(
                     vectorstore)
 
                 st.success("Processing complete!")

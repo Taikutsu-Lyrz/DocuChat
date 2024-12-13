@@ -12,9 +12,8 @@ texts = " **DocuChat** is an innovative web application that lets you interact w
 def stream_data():
         for word in texts.split(" "):
             yield word + " "
-            time.sleep(0.1)
+            time.sleep(0.05)
            
-    
 
         
 
