@@ -47,8 +47,10 @@ def main():
     st.write("It's easy to start just select your method ")
     st.page_link("pages/Pdf.py", label="Import Pdf 📕")
     st.page_link("pages/Text.py", label="Import Text 📄")
+    st.page_link("pages/Web.py", label="Import Website Link 🌐")
     st.page_link("pages/Youtube.py", label="Import Youtube ▶️")
     st.page_link("pages/Image.py", label="Generate Photo 📷")
+    
     
     
 
