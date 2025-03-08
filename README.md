@@ -27,44 +27,94 @@ DocuChat is an innovative web application that lets you interact with the conten
 - **Researchers**: Analyze large documents efficiently.
 - **Professionals**: Interact with reports and presentations in an intuitive way.
 
-## Installation & Setup
+## Installation & Setup for DocuChat (Python + Streamlit)
 
-To run DocuChat locally:
+To run DocuChat locally, follow these steps:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Taikutsu-Lyrz/DocuChat.git
-   ```
-2. Navigate into the project directory:
-   ```bash
-   cd DocuChat
-   ```
-3. Install dependencies:
-   ```bash
-   npm install  # or yarn install
-   ```
-4. Start the development server:
-   ```bash
-   npm start  # or yarn start
-   ```
+1. Clone the repository: Open your terminal and clone the project repository using Git:
 
-## Requirements
+git clone https://github.com/Taikutsu-Lyrz/DocuChat.git
 
-Make sure you have the following dependencies installed:
 
-```
+2. Navigate into the project directory: Change into the project directory:
+
+cd DocuChat
+
+
+3. Set up a virtual environment (recommended): It’s a good practice to use a virtual environment for Python projects to manage dependencies. Run the following command to create one:
+
+For Windows:
+
+python -m venv venv
+
+For macOS/Linux:
+
+python3 -m venv venv
+
+
+Activate the virtual environment:
+
+Windows:
+
+.\venv\Scripts\activate
+
+macOS/Linux:
+
+source venv/bin/activate
+
+
+
+4. Install dependencies: Once your virtual environment is activated, install the required Python dependencies by running:
+
+pip install -r requirements.txt
+
+This will install the following packages:
+
 langchain==0.0.316
+
 PyPDF2==3.0.1
+
 python-dotenv==1.0.1
+
 streamlit==1.34.0
+
 openai==0.28.0
+
 faiss-cpu==1.8.0
+
 altair==5.3.0
+
 tiktoken==0.7.0
+
 youtube_transcript_api==0.6.2
+
 pillow==10.3.0
+
 beautifulsoup4==4.12.3
-```
+
+
+
+5. Run the app: To start the DocuChat app using Streamlit, run:
+
+streamlit run app.py  # or whatever the main entry point is
+
+This will start the app, and you should be able to access it in your browser at http://localhost:8501.
+
+
+
+
+---
+
+Additional Notes:
+
+Make sure you have Python installed on your system. You can download the latest version from Python's official website.
+
+Set up environment variables: If needed, create a .env file to store your sensitive keys (like OpenAI API keys) in the project directory.
+
+Streamlit documentation: For further customization and usage of Streamlit, you can check the Streamlit documentation.
+
+
+With these steps, you’ll be able to run DocuChat locally using Python and Streamlit.
 
 ## Live Demo
 
