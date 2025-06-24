@@ -27,7 +27,6 @@ DocuChat is an innovative web application that lets you interact with the conten
 - **Researchers**: Analyze large documents efficiently.
 - **Professionals**: Interact with reports and presentations in an intuitive way.
 
-Here’s the rewritten **Installation & Setup** guide for **DocuChat** using Python and **Streamlit** (instead of npm):
 
 ---
 
